@@ -6,7 +6,7 @@
             font-weight: bold;
             text-transform: uppercase;
             letter-spacing: 0.1em;
-            margin-left: 50px; /* Adjust this value to set distance from the theme toggle */
+            margin-left: 30px; /* Adjust this value to set distance from the theme toggle */
             text-shadow:
                 1px 0 #ff0000,
                 -1px 0 #ff00c8,
