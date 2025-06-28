@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicholas Le-Maire | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-900 text-gray-200">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-gray-900 bg-opacity-90 backdrop-filter backdrop-blur-lg border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <span class="text-red-500 font-bold text-xl font-orbitron flicker mr-4">
+                            <a href="#home">NAL</a>
+                        </span>
+                        <button id="theme-toggle" class="text-gray-400 hover:text-red-500 transition duration-300">
+                            <i class="fas fa-moon" id="theme-icon"></i>
+                        </button>
+                            <div class="flex items-center">
+                    <a href="#home">
+                        <h1 class="glitch" data-text="Portfolio">Portfolio</h1>
+                    </a>
+                            </div>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#home" class="hacker-text px-3 py-2 rounded-md text-sm font-medium hover:text-red-500 transition duration-300">Home</a>
+                        <a href="#about" class="hacker-text px-3 py-2 rounded-md text-sm font-medium hover:text-red-500 transition duration-300">About</a>
+                        <a href="#experience" class="hacker-text px-3 py-2 rounded-md text-sm font-medium hover:text-red-500 transition duration-300">Experience</a>
+                        <a href="#education" class="hacker-text px-3 py-2 rounded-md text-sm font-medium hover:text-red-500 transition duration-300">Education</a>
+                        <a href="#skills" class="hacker-text px-3 py-2 rounded-md text-sm font-medium hover:text-red-500 transition duration-300">Skills</a>
+                        <a href="#projects" class="hacker-text px-3 py-2 rounded-md text-sm font-medium hover:text-red-500 transition duration-300">Certificate & Projects</a>
+                        <a href="#contact" class="hacker-text px-3 py-2 rounded-md text-sm font-medium hover:text-red-500 transition duration-300">Contact</a>
+
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button class="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none">
+                        <svg class="h-6 w-6 hamburger" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <svg class="h-6 w-6 close hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden md:hidden fixed inset-0 z-40 bg-gray-900 bg-opacity-95 backdrop-filter backdrop-blur-lg">
+        <div class="flex items-center justify-center h-full">
+            <div class="text-center">
+                <div class="space-y-8">
+                    <a href="#home" class="block text-2xl text-gray-300 hover:text-red-500 transition duration-300">Home</a>
+                    <a href="#about" class="block text-2xl text-gray-300 hover:text-red-500 transition duration-300">About</a>
+                    <a href="#experience" class="block text-2xl text-gray-300 hover:text-red-500 transition duration-300">Experience</a>
+                    <a href="#education" class="block text-2xl text-gray-300 hover:text-red-500 transition duration-300">Education</a>
+                    <a href="#skills" class="block text-2xl text-gray-300 hover:text-red-500 transition duration-300">Skills</a>
+                    <a href="#projects" class="block text-2xl text-gray-300 hover:text-red-500 transition duration-300">Certificates & Projects</a>
+                    <a href="#contact" class="block text-2xl text-gray-300 hover:text-red-500 transition duration-300">Contact</a>
+                </div>
+                <button class="absolute top-4 right-4 text-gray-400 hover:text-red-500 text-3xl">
+                    <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-b from-gray-900 to-black relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20">
+            <div class="absolute top-0 left-0 w-full h-full bg-grid-pattern"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 glow-text typewriter">
+                    Nicholas Archer Le-Maire
+                </h1>
+                <div class="text-xl md:text-2xl mb-6">
+                    <span id="typing-text" class="border-r-2 border-white pr-1"></span>
+                </div>
+                <h2 class="text-xl md:text-2xl mb-6 text-red-500 font-orbitron flicker">
+                    Geography Graduate | Aspiring Developer
+                </h2>
+                <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8 slide-in delay-1">
+                    Bridging geography, technology, and urban development through code and design.
+                </p>
+                <div class="flex justify-center space-x-4 slide-in delay-2">
+                    <a href="https://github.com/lastHero404" target="_blank" class="pulse inline-flex items-center px-6 py-3 border border-red-500 text-red-500 rounded-full hover:bg-red-500 hover:text-white transition duration-300">
+                        <i class="fab fa-github mr-2"></i> GitHub
+                    </a>
+                    <a href="https://linkedin.com/in/nicholas-le-maire-a410842a7" target="_blank" class="pulse inline-flex items-center px-6 py-3 border border-red-500 text-red-500 rounded-full hover:bg-red-500 hover:text-white transition duration-300">
+                        <i class="fab fa-linkedin mr-2"></i> LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-0 right-0 flex justify-center">
+            <a href="#about" class="text-red-500 hover:text-red-400 transition duration-300 float">
+                <i class="fas fa-chevron-down text-3xl"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 glow-text slide-in">
+                    <span class="text-red-500">//</span> About Me
+                </h2>
+                <div class="w-20 h-1 bg-red-500 mx-auto mb-6 slide-in delay-1"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="slide-in delay-2">
+                    <div class="relative group w-1/2 mx-auto md:w-3/4">
+                        <div class="absolute inset-0 bg-red-500 rounded-lg transform rotate-3 glow-box pulse"></div>
+                        <img src="Images/me.jpg" alt="Profile Pic" class="me relative rounded-lg w-full h-auto border-2 border-gray-800 transform transition-all duration-500 group-hover:-rotate-2 group-hover:scale-105 float">
+                    </div>
+                </div>
+                <div class="slide-in delay-3">
+                    <h3 class="text-2xl font-bold mb-4 hacker-text">Hello! I'm Nicholas Archer Le-Maire</h3>
+                    <p class="mb-4">
+                        A recent graduate of the University of Ghana, where I studied Geography and Resource Development where I was awarded a Second Class Upper degree. My academic journey has equipped me with a strong foundation in spatial analysis, urban planning, and the intersection of geography and technology. I also served as President of the University of Ghana Chess Club for a year, where I led team activities and helped promote strategic thinking on campus. As part of my leadership, I designed the club’s current official logo, combining my passion for both chess and graphic design.
+                    </p>
+                    <p class="mb-4">
+                        I'm currently completing my national service at dotDWG Studio, a virtual architectural and design firm, where I'm learning how design, planning, and technology intersect in the built environment.
+                    </p>
+                    <p class="mb-4">
+                        Alongside my service, I'm actively training to become a front-end web developer through freeCodeCamp, learning how to build responsive, accessible websites using modern tools and best practices.
+                    </p>
+                    <p class="mb-6">
+                        I'm fascinated by how technology can transform transportation, urban mobility, and spatial analysis, and I'm working to bridge these disciplines with programming and design.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-gray-800 rounded-full text-sm text-red-400">Geography</span>
+                        <span class="px-3 py-1 bg-gray-800 rounded-full text-sm text-red-400">Web Development</span>
+                        <span class="px-3 py-1 bg-gray-800 rounded-full text-sm text-red-400">Urban Planning</span>
+                        <span class="px-3 py-1 bg-gray-800 rounded-full text-sm text-red-400">GIS</span>
+                        <span class="px-3 py-1 bg-gray-800 rounded-full text-sm text-red-400">Transportation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 glow-text slide-in">
+                    <span class="text-red-500">//</span> Experience
+                </h2>
+                <div class="w-20 h-1 bg-red-500 mx-auto mb-6 slide-in delay-1"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-900 p-8 rounded-lg border border-gray-700 hover:border-red-500 transition duration-300 grid-item slide-in delay-2">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-red-500 p-3 rounded-full mr-4">
+                            <i class="fas fa-building text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold hacker-text">dotDWG Studio</h3>
+                            <p class="text-red-400">2024 – Present</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-2">National Service Intern</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-300">
+                        <li>Supported architectural planning and research on urban infrastructure</li>
+                        <li>Contributed to proposal development for educational infrastructure projects</li>
+                        <li>Gained hands-on experience in project documentation, digital collaboration, and design tools</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-900 p-8 rounded-lg border border-gray-700 hover:border-red-500 transition duration-300 grid-item slide-in delay-3">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-red-500 p-3 rounded-full mr-4">
+                            <i class="fas fa-university text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold hacker-text">CalBank PLC</h3>
+                            <p class="text-red-400">Internship</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-2">Sales & Customer Service Intern</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-300">
+                        <li>Engaged with clients to manage account inquiries and service requests</li>
+                        <li>Developed interpersonal and communication skills in a professional banking environment</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 glow-text slide-in">
+                    <span class="text-red-500">//</span> Education
+                </h2>
+                <div class="w-20 h-1 bg-red-500 mx-auto mb-6 slide-in delay-1"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700 hover:border-red-500 transition duration-300 grid-item slide-in delay-2">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-red-500 p-3 rounded-full mr-4">
+                            <i class="fas fa-graduation-cap text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold hacker-text">University of Ghana</h3>
+                            <p class="text-red-400">2024</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-2">B.A. Geography & Resource Development (Second Class Upper)</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-300">
+                        <li>Minor in Archaeology and History</li>
+                        <li>Relevant coursework: Transportation & Geomorphology</li>
+                        <li>President, University of Ghana Chess Club</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700 hover:border-red-500 transition duration-300 grid-item slide-in delay-3">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-red-500 p-3 rounded-full mr-4">
+                            <i class="fas fa-laptop-code text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold hacker-text">freeCodeCamp.org</h3>
+                            <p class="text-red-400">Dec 2024 – Present</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-2">Front-End Web Development Training</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-300">
+                        <li>Learning HTML5, CSS3, JavaScript, Responsive Web Design, Accessibility, and Git</li>
+                        <li>Working toward certifications in front-end and full-stack development</li>
+                        <li>✅ Responsive Web Design Certificate  
+                            <h4 class="font-medium text-gray-300">freeCodeCamp - Responsive Web Design</h4>
+                            <p class="text-gray-400">Completed December 2024</p>
+                            <a href="https://www.freecodecamp.org/certification/lastHero_404/responsive-web-design" target="_blank" rel="noopener noreferrer">
+                                <img src="Images/Responsive Web Design Certificate.png" alt="responsive-web-design certificate" class="cert-img">
+                            </a>
+                            <a href="https://www.freecodecamp.org/certification/lastHero_404/responsive-web-design" class="text-red-400 hover:text-red-300 transition duration-300 inline-flex items-center mt-1" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt mr-1"></i> View Certificate
+                            </a>
+                        </li>
+                        <li>✅ JavaScript Algorithms and Data Structures
+                            <h4 class="font-medium text-gray-300">freeCodeCamp - JavaScript Algorithms and Data Structures</h4>
+                            <p class="text-gray-400">Completed June 2025</p>
+                             <a href="https://www.freecodecamp.org/certification/lastHero_404/javascript-algorithms-and-data-structures-v8" target="_blank" rel="noopener noreferrer">
+                                <img src="Images/JavaScript Algorithms and Data Structures Cert.png" alt="JavaScript Algorithms and Data Structures certificate" class="cert-img">
+                            </a>
+                            <a href="https://www.freecodecamp.org/certification/lastHero_404/javascript-algorithms-and-data-structures-v8" class="text-red-400 hover:text-red-300 transition duration-300 inline-flex items-center mt-1" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt mr-1"></i> View Certificate
+                            </a>
+                        </li>
+                        <li>✅ Front-End Development Libraries</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700 hover:border-red-500 transition duration-300 grid-item slide-in delay-4">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-red-500 p-3 rounded-full mr-4">
+                            <i class="fas fa-school text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold hacker-text">Mfantsipim School</h3>
+                            <p class="text-red-400">2016 – 2019</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-2">General Arts (West African Senior School Certificate Examination-WASSCE)</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-300">
+                        <li>Member of the Mfantsipim Army Cadet Corps</li>
+                        <li>🏅 Certificate of Merit, Mfantsipim Army Cadet
+                            <p class="text-gray-400">Completed 2019</p>
+                            <img src="Images/Cadet Certificate of Merit.png" alt="Mfantsipim Army Cadet Corps Certificate of Merit" class="cert-img">
+                        </li>
+                        <li>Developed strong leadership and teamwork through disciplined training and field exercises</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700 hover:border-red-500 transition duration-300 grid-item slide-in delay-2">
+            <div class="flex items-center mb-4">
+                <div class="bg-red-500 p-3 rounded-full mr-4">
+                    <i class="fas fa-school text-white"></i> <!-- Changed from graduation-cap to school -->
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold hacker-text">Rect Academy</h3>
+                    <p class="text-red-400">2016</p>
+                </div>
+            </div>
+            <p class="text-gray-400 mb-2">Basic Education Certificate Examination (BECE)</p>
+            <ul class="list-disc list-inside space-y-2 text-gray-300">
+                 <li>Completed Junior High School</li>
+                <li>Strong academic foundation for high school</li>
+            </ul>
+        </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 glow-text slide-in">
+                    <span class="text-red-500">//</span> Projects (Coming Soon)
+                </h2>
+                <div class="w-20 h-1 bg-red-500 mx-auto mb-6 slide-in delay-1"></div>
+            </div>
+                <div class="bg-gray-800 p-8 rounded-lg border border-gray-700 hover:border-red-500 transition duration-300 grid-item slide-in delay-3">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-red-500 p-3 rounded-full mr-4">
+                            <i class="fas fa-laptop-code text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold hacker-text">Projects</h3>
+                    </div>
+                    <ul class="space-y-4">
+                        <li>
+                            <h4 class="font-medium text-gray-300">Personal Portfolio Website</h4>
+                            <p class="text-gray-400">HTML, CSS, JavaScript, Tailwind CSS</p>
+                            <a href="#" class="text-red-400 hover:text-red-300 transition duration-300 inline-flex items-center mt-1">
+                                <i class="fas fa-external-link-alt mr-1"></i> View Project
+                            </a>
+                        </li>
+                        <li>
+                            <h4 class="font-medium text-gray-300">freeCodeCamp Projects</h4>
+                            <p class="text-gray-400">Various web development projects</p>
+                            <a href="#" class="text-red-400 hover:text-red-300 transition duration-300 inline-flex items-center mt-1">
+                                <i class="fas fa-external-link-alt mr-1"></i> View Projects
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 glow-text slide-in">
+                    <span class="text-red-500">//</span> Skills & Tools
+                </h2>
+                <div class="w-20 h-1 bg-red-500 mx-auto mb-6 slide-in delay-1"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-gray-900 p-6 rounded-lg border border-gray-700 hover:border-red-500 transition duration-300 grid-item slide-in delay-2">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-red-500 p-2 rounded-full mr-3">
+                            <i class="fas fa-code text-white"></i>
+                        </div>
+                        <h3 class="text-lg font-bold hacker-text">Programming</h3>
+                    </div>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
+                            <span>HTML5</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
+                            <span>CSS3</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
+                            <span>JavaScript (learning)</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
+                            <span>Git</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-gray-900 p-6 rounded-lg border border-gray-700 hover:border-red-500 transition duration-300 grid-item slide-in delay-3">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-red-500 p-2 rounded-full mr-3">
+                            <i class="fas fa-globe text-white"></i>
+                        </div>
+                        <h3 class="text-lg font-bold hacker-text">Web Development</h3>
+                    </div>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
+                            <span>Responsive design</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
+                            <span>Accessibility</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
+                            <span>Browser compatibility</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-gray-900 p-6 rounded-lg border border-gray-700 hover:border-red-500 transition duration-300 grid-item slide-in delay-4">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-red-500 p-2 rounded-full mr-3">
+                            <i class="fas fa-map-marked-alt text-white"></i>
+                        </div>
+                        <h3 class="text-lg font-bold hacker-text">GIS & Spatial Analysis</h3>
+                    </div>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
+                            <span>Understanding of geospatial tools</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
+                            <span>Map-based data analysis</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-gray-900 p-6 rounded-lg border border-gray-700 hover:border-red-500 transition duration-300 grid-item slide-in delay-5">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-red-500 p-2 rounded-full mr-3">
+                            <i class="fas fa-paint-brush text-white"></i>
+                        </div>
+                        <h3 class="text-lg font-bold hacker-text">Digital Design</h3>
+                    </div>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
+                            <span>Canva</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
+                            <span>Adobe Photoshop (basic)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 glow-text slide-in">
+                    <span class="text-red-500">//</span> Contact Me
+                </h2>
+                <div class="w-20 h-1 bg-red-500 mx-auto mb-6 slide-in delay-1"></div>
+                <p class="text-xl max-w-2xl mx-auto slide-in delay-2">
+                    Interested in collaborating or have questions? Feel free to reach out!
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="slide-in delay-3">
+                    <form action="https://formspree.io/f/movwyyro" method="POST" class="space-y-6">
+                        <div class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-300 mb-1">Name</label>
+                                <input type="text" name="name" required class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Email</label>
+                                <input type="email" name="email" required class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-300 mb-1">Message</label>
+                                <textarea name="message" rows="5" required class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"></textarea>
+                            </div>
+                            <button type="submit" class="w-full px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-medium rounded-lg transition duration-300 transform hover:scale-105">
+                                Send Message
+                            </button>
+                        </div>
+                        </form>
+                </div>
+                <div class="slide-in delay-4">
+                    <div class="bg-gray-800 p-8 rounded-lg border border-gray-700 h-full">
+                        <h3 class="text-xl font-bold mb-6 hacker-text">Contact Information</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <div class="bg-red-500 p-2 rounded-full mr-4">
+                                    <i class="fas fa-envelope text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-300">Email</h4>
+                                    <a href="mailto:kwakuamakye360@gmail.com" class="text-red-400 hover:text-red-300 transition duration-300">kwakuamakye360@gmail.com</a>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-red-500 p-2 rounded-full mr-4">
+                                    <i class="fas fa-phone-alt text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-300">Phone</h4>
+                                    <p class="text-gray-400">+233 27 161 7846</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-red-500 p-2 rounded-full mr-4">
+                                    <i class="fas fa-map-marker-alt text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-300">Location</h4>
+                                    <p class="text-gray-400">Accra, Ghana</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-red-500 p-2 rounded-full mr-4">
+                                    <i class="fab fa-github text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-300">GitHub</h4>
+                                    <a href="https://github.com/lastHero404" target="_blank" class="text-red-400 hover:text-red-300 transition duration-300">github.com/lastHero404</a>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-red-500 p-2 rounded-full mr-4">
+                                    <i class="fab fa-linkedin text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-300">LinkedIn</h4>
+                                    <a href="https://linkedin.com/in/nicholas-le-maire-a410842a7" target="_blank" class="text-red-400 hover:text-red-300 transition duration-300">linkedin.com/in/nicholas-le-maire</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col items-center">
+            <div class="flex space-x-6 mb-6">
+                <a href="https://github.com/lastHero404" target="_blank" class="text-gray-500 hover:text-red-500 transition duration-300">
+                    <i class="fab fa-github text-2xl"></i>
+                </a>
+                <a href="https://linkedin.com/in/nicholas-le-maire-a410842a7" target="_blank" class="text-gray-500 hover:text-red-500 transition duration-300">
+                    <i class="fab fa-linkedin text-2xl"></i>
+                </a>
+                <a href="mailto:kwakuamakye360@gmail.com" class="text-gray-500 hover:text-red-500 transition duration-300">
+                    <i class="fas fa-envelope text-2xl"></i>
+                </a>
+                </div>
+                <p class="text-gray-500 text-center">
+                    © 2025 <!-- turn name into link to GitHub --> Nicholas Archer Le-Maire. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,211 @@
+        /* glitch effect - gentler version */
+        .glitch {
+            position: relative;
+            color: #ef4444;
+            font-size: 2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-left: 10rem; /* Adjust this value to set distance from the theme toggle */
+            text-shadow:
+                1px 0 #ff0000,
+                -1px 0 #ff00c8,
+                0 1px #00fff7,
+                0 -1px #ff00c8;
+            animation: glitch 2.5s infinite linear alternate-reverse;
+            /* Slower, smaller movement, softer shadows */
+        }
+
+        /* Glitch animation for both modes - gentler */
+        @keyframes glitch {
+            0% {
+                text-shadow:
+                    1px 0 #00fff7,
+                    -1px 0 #ff00c8,
+                    0 1px #00fff7,
+                    0 -1px #ff00c8;
+                transform: translate(0, 0);
+            }
+            20% {
+                text-shadow:
+                    1px 1px #00fff7,
+                    -1px -1px #ff00c8,
+                    0 1px #00fff7,
+                    0 -1px #ff00c8;
+                transform: translate(-1px, 1px);
+            }
+            40% {
+                text-shadow:
+                    1px -1px #00fff7,
+                    -1px 1px #ff00c8,
+                    0 1px #00fff7,
+                    0 -1px #ff00c8;
+                transform: translate(1px, -1px);
+            }
+            60% {
+                text-shadow:
+                    1px 0 #00fff7,
+                    -1px 0 #ff00c8,
+                    0 1px #00fff7,
+                    0 -1px #ff00c8;
+                transform: translate(-0.5px, 0.5px);
+            }
+            80% {
+                text-shadow:
+                    1px 1px #00fff7,
+                    -1px -1px #ff00c8,
+                    0 1px #00fff7,
+                    0 -1px #ff00c8;
+                transform: translate(0.5px, -0.5px);
+            }
+            100% {
+                text-shadow:
+                    1px 0 #00fff7,
+                    -1px 0 #ff00c8,
+                    0 1px #00fff7,
+                    0 -1px #ff00c8;
+                transform: translate(0, 0);
+            }
+        }
+        /* Animation effects */
+        .fade-in {
+            animation: fadeIn 1s ease-in-out forwards;
+            opacity: 0;
+        }  
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(239, 68, 68, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+        }
+        @keyframes flicker {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        .float {
+            animation: float 6s ease-in-out infinite;
+        }
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        .flicker {
+            animation: flicker 3s infinite;
+        }
+        .glow-text {
+            text-shadow: 0 0 5px rgba(239, 68, 68, 0.7);
+        }
+        .glow-box {
+            box-shadow: 0 0 15px rgba(239, 68, 68, 0.5);
+        }
+        .hacker-text {
+            transition: all 0.3s ease;
+        }
+        .hacker-text:hover {
+            color: #ef4444;
+            text-shadow: 0 0 8px rgba(239, 68, 68, 0.8);
+        }
+        .typewriter {
+            overflow: hidden;
+            border-right: 2px solid #ef4444;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: 2px;
+            animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+        }
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: #ef4444 }
+        }
+        .slide-in {
+            animation: slideIn 1s ease-out forwards;
+            opacity: 0;
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        .cert-img {
+            max-width: 50%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .delay-1 { animation-delay: 0.2s; }
+        .delay-2 { animation-delay: 0.4s; }
+        .delay-3 { animation-delay: 0.6s; }
+        .delay-4 { animation-delay: 0.8s; }
+        .delay-5 { animation-delay: 1s; }
+        .grid-item {
+            transition: all 0.3s ease;
+        }
+        .grid-item:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 20px rgba(239, 68, 68, 0.5);
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #0f0f0f;
+            color: #e5e7eb;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        
+        body.light-mode {
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .light-mode .bg-gray-900 {
+            background-color: #ffffff;
+        }
+        
+        .light-mode .bg-gray-800 {
+            background-color: #f8f9fa;
+        }
+        
+        .light-mode .text-gray-200,
+        .light-mode .text-gray-300,
+        .light-mode .text-gray-400 {
+            color: #290101;
+        }
+        
+        .light-mode .border-gray-700,
+        .light-mode .border-gray-800 {
+            border-color: #e5e7eb;
+        }
+        
+        .light-mode .bg-gray-800 {
+            background-color: #f1f3f5;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Orbitron', sans-serif;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1a1a1a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #ef4444;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #d32f2f;
+        }
+
+        
+        
