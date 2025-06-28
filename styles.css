@@ -6,7 +6,7 @@
             font-weight: bold;
             text-transform: uppercase;
             letter-spacing: 0.1em;
-            margin-left: 10rem; /* Adjust this value to set distance from the theme toggle */
+            margin-left: 70px; /* Adjust this value to set distance from the theme toggle */
             text-shadow:
                 1px 0 #ff0000,
                 -1px 0 #ff00c8,
@@ -145,6 +145,7 @@
             border-radius: 8px;
             transition: transform 0.3s ease;
         }
+
         .delay-1 { animation-delay: 0.2s; }
         .delay-2 { animation-delay: 0.4s; }
         .delay-3 { animation-delay: 0.6s; }
@@ -162,6 +163,8 @@
             background-color: #0f0f0f;
             color: #e5e7eb;
             transition: background-color 0.3s ease, color 0.3s ease;
+            word-wrap: break-word;
+            overflow-x: auto;
         }
         
         body.light-mode {
@@ -206,6 +209,3 @@
         ::-webkit-scrollbar-thumb:hover {
             background: #d32f2f;
         }
-
-        
-        
